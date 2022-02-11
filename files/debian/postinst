@@ -1,0 +1,6 @@
+#!/bin/bash -e
+
+systemctl daemon-reload
+systemctl enable nbftp.service
+
+exit 0

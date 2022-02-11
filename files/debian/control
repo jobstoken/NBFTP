@@ -1,0 +1,9 @@
+Package:        nbftp
+Version:        1:0
+Section:        utils
+Priority:       optional
+Architecture:   amd64
+Depends:        openssl, zlib1g
+Maintainer:     Sun Chao <sch@tju.edu.cn>
+Description:    NBFTP Server v1.0
+

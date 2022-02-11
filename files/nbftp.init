@@ -1,0 +1,15 @@
+[Unit]
+Description=NBFTP
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/nbftp.pid
+Restart=on-failure
+IgnoreSIGPIPE=no
+KillMode=none
+ExecStart=/usr/bin/nbftp_server --server
+ExecStop=/usr/bin/nbftp stop
+
+[Install]
+WantedBy=multi-user.target
